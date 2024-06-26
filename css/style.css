@@ -55,6 +55,15 @@ a {
     text-decoration: none;
 }
 
+.a-nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 .nav a,
 ul {
     font-weight: 500;
