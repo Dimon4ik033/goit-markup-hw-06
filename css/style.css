@@ -4,34 +4,11 @@ body {
     color: #434455;
 }
 
-.h2-features {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-}
-
-.features-text {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.p-text {
-    color: #434455;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
 a {
     color: #2e2f42;
 }
+
+/* Header */
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -83,6 +60,7 @@ ul {
     font-style: normal;
 }
 
+
 .tel-mail {
     font-weight: 400;
     font-size: 16px;
@@ -97,6 +75,8 @@ ul {
 .tel-mail:focus {
     color: #404bbf;
 }
+
+/* Main */
 
 .solutions-block {
     background-color: #2e2f42;
@@ -127,6 +107,36 @@ ul {
     background-color: #404BBF;
     cursor: pointer;
 }
+
+/* Features */
+
+.h2-features {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+
+.features-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.p-text {
+    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
+/* Our team */
 
 .our-team {
     font-weight: 700;
