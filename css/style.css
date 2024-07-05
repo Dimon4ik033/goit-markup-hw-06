@@ -180,15 +180,15 @@ ul {
 
 .features-list {
     display: flex;
-    margin-right: 24px;
+    gap: 24px;
 }
 
-.features-list:last-child {
+.point:last-child { 
     margin-right: 0;
-}
+} 
 
 .point {
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    width: calc((100% - 72px) / 4);
 }
 
 .features-text {
@@ -214,10 +214,10 @@ ul {
 
 .our-team-list {
     display: flex;
-    margin-right: 24px;
+    gap: 24px
 }
 
-.our-team-list:last-child {
+.our-team-people:last-child {
     margin-right: 0;
 }
 
