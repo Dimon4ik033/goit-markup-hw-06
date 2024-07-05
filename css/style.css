@@ -193,7 +193,7 @@ ul {
     margin-right: 0;
 } 
 
-.point {
+.features-list .point {
     flex-basis: calc((100% - 72px) / 4); 
 }
 
