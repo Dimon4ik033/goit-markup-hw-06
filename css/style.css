@@ -523,6 +523,7 @@ ul {
 .footer-div {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
 }
 
 .footer-container {
