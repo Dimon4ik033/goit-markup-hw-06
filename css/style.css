@@ -27,6 +27,10 @@ ul, li {
 
 .had-container {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 
+    0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -73,6 +77,27 @@ ul, li {
     list-style-type: none;
     display: flex;
     padding: 24px 0;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.nav-menu.current {
+    position: relative;
+    color: #404bbf;
+}
+
+.nav-menu.current::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
 }
 
 .nav-menu:not(:last-child) {
@@ -120,6 +145,8 @@ ul {
     text-decoration: none;
     list-style-type: none;
     color: #434455;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel-mail:hover, 
@@ -132,6 +159,12 @@ ul {
 .solutions-block {
     background-color: #2e2f42;
     padding: 188px 0;
+    background-image: linear-gradient(to bottom, 
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(/images/hero-image.jpg);
+    background-size: cover;
+;
 }
 
 .container-solutions {
@@ -168,12 +201,16 @@ ul {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover, 
 .order-button:focus {
     background-color: #404BBF;
     cursor: pointer;
+
+    
 }
 
 /* Features */
@@ -196,6 +233,21 @@ ul {
     overflow: hidden;
 }
 
+.features-icon-container {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+}
+.features-icon {
+    width: 64px;
+    height: 64px;
+}
+
 .features-list {
     display: flex;
     gap: 24px;
@@ -215,7 +267,7 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
@@ -261,10 +313,21 @@ ul {
 
     flex-basis: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team-people:hover .social-icon-list{
+    background-color: #404bbf;
 }
 
 .job-name {
-    padding: 32px 0;
+    padding-top: 32px;
+    padding-bottom: 8px;
 }
 
 .our-team-section {
@@ -290,6 +353,39 @@ ul {
     color: #434455;
 
     text-align: center;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 264px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.social-list {
+    gap: 24px;
+}
+
+.social-icon-list {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff;
 }
 
 /* Our Portfolio */
@@ -322,6 +418,42 @@ ul {
 
 .portfolio-point {
     flex-basis: calc((100% - 48px) / 3);
+}
+
+.overflow {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+}
+
+.overlay {
+    padding: 40px 32px 164px 32px;
+    background-color: #4d5ae5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.portfolio-point:hover .overlay {
+    transform: translateY(0);
+}
+
+.portfolio-point:hover {
+    box-shadow: 
+    0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .app-name {
@@ -385,5 +517,44 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    width: 264px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container {
     max-width: 264px;
+    margin: 0px 120px 0px 156px;
+    padding: 0;
+}
+
+.social-media-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-social-list {
+    gap: 16px;
+}
+
+.footer-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.media-footer {
+    max-height: 80px;
+}
+
+.social-icon-list:hover {
+    background-color: #31d0aa;
 }
