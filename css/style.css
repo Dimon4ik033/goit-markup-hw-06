@@ -1,13 +1,22 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     background-color: #fff;
     color: #434455;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
 
 img {
@@ -18,7 +27,7 @@ a {
     color: #2e2f42;
 }
 
-ul, li {
+ul, ol, li {
     margin: 0;
     padding: 0;
 }
@@ -516,11 +525,10 @@ ul {
 .footer-div {
     display: flex;
     align-items: baseline;
-    margin: 0px 692px 0px 156px;
+    padding-left: 156px;
 }
 
 .footer-container { 
-    padding: 0;
     margin-right: 120px;
 }
 
