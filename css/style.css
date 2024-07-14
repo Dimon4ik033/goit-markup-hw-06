@@ -171,7 +171,7 @@ ul {
     background-image: linear-gradient(to bottom, 
     rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), 
-    url(/images/hero-image.jpg);
+    url(../images/hero-image.jpg);
     background-size: cover;
     max-width: 1440px;
     background-repeat: no-repeat;
@@ -359,7 +359,7 @@ ul {
     color: #434455;
 
     text-align: center;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .social-list {
@@ -525,7 +525,6 @@ ul {
 .footer-div {
     display: flex;
     align-items: baseline;
-    padding-left: 156px;
 }
 
 .footer-container { 
