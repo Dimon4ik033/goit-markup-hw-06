@@ -411,6 +411,81 @@
         </section>
       </main>
 
+      <div class="modal-overlay">
+        <div class="modal">
+          <div class="div-close-button">
+            <button type="button" class="close-button">
+              <svg class="close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <p class="form-text">Leave your contacts and we will call you back</p>
+          <form
+            class="form-modal"
+            name="contacts"
+            autocomplete="off"
+            novalidate
+          >
+            <label for="name" class="label-form">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                autofocus
+                class="input-form"
+              />
+              <svg class="svg-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+
+            <label for="phone" class="label-form">Phone</label>
+            <div class="input-wrap">
+              <input type="phone" name="phone" id="phone" class="input-form" />
+              <svg class="svg-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+
+            <label for="mail" class="label-form">Email</label>
+            <div class="input-wrap">
+              <input type="email" name="mail" id="mail" class="input-form" />
+              <svg class="svg-form" width="18" heigth="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+
+            <label for="comment" class="label-form">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+              class="textarea-form"
+            ></textarea>
+          </form>
+
+          <div class="privacy-policy">
+            <input type="checkbox" class="visually-hidden" />
+            <span class="span-check">
+              <svg class="checkmark" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            <label class="privacy-policy-text">
+              I accept the terms and conditions of the
+              <span class="privacy-policy-span"
+                ><a href="">Privacy Policy</a></span
+              >
+            </label>
+          </div>
+          <div class="button-area">
+            <button type="submit" class="send-button">Send</button>
+          </div>
+        </div>
+      </div>
+
       <footer class="footer">
         <div class="footer-div container">
           <div class="footer-container">
@@ -452,6 +527,28 @@
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-subscribe">
+            <p class="social-media-text">Subscribe</p>
+            <ul class="subscribe-list">
+              <li>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="email-footer"
+                />
+              </li>
+              <li>
+                <button type="submit" class="subscribe-svg">
+                  <p class="social-media-text-button">Subscribe</p>
+                  <svg class="send" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
               </li>
             </ul>
           </div>
