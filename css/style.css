@@ -723,11 +723,6 @@ ul {
     margin-bottom: 16px;
 }
 
-.form-modal {
-    display: flex;
-    flex-direction: column;
-}
-
 .form-container {
     margin-bottom: 8px;
 }
@@ -847,6 +842,8 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
+    margin: 0 auto;
+    padding: 16px 32px;
 
     border-radius: 4px;
 
